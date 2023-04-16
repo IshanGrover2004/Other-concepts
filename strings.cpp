@@ -24,12 +24,13 @@ void reverse_String(char s[]) {              //For printing this reversed i/p st
 bool palindrome(char s[]){                             //Processing --> will continue soon
   int start = 0;
   int end = get_Length(s) - 1;
-  bool ans = False;
-  for(int i=0 ; i<get_length(s) ; i++){
-    if (s[start++] == s[end--]){ans=True;}
+  bool ans = false;
+  for(int i=0 ; i<get_Length(s) ; i++){
+    if (s[start++] == s[end--]){ans=true;}
   }
   return ans;
 }
+
 int main(){
   //declaration of string or we can say char array
   char str[20];
